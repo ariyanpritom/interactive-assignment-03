@@ -48,6 +48,9 @@
     margin-top: 4.6rem;
     gap: 1.8rem;
   }
+  .heading-primary {
+    word-spacing: -1.7rem;
+  }
 }
 
 @media (max-width: 59.3em) {
@@ -129,7 +132,7 @@
 
 @media (max-width: 41.8em) {
   html {
-    font-size: 43.75%;
+    font-size: 50%;
   }
 
   .service-box {
@@ -138,5 +141,39 @@
 
   .social-box {
     display: none;
+  }
+}
+
+@media (max-width: 30em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .hero-right-box {
+    padding: 0.5rem;
+  }
+
+  .heading-primary {
+    font-size: 4.5rem;
+    word-spacing: -1.7rem;
+  }
+
+  .hero-header {
+    font-size: 1.2rem;
+  }
+
+  .skill-box {
+    display: none;
+  }
+
+  .skill-helper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .grid-self {
+    justify-self: unset;
+  }
+
+  .technology-box {
+    grid-template-columns: 1fr;
   }
 }
