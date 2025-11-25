@@ -1,0 +1,142 @@
+@media (max-width: 80.6em) {
+  .skill-helper {
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+  }
+}
+
+@media (max-width: 71.5em) {
+  html {
+    /* 9px / 16px */
+    font-size: 56.25%;
+  }
+  .heading-primary {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    gap: 1.8rem;
+  }
+
+  .list-item {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 66.8em) {
+  .skill-helper {
+    grid-template-columns: repeat(3, 1fr);
+    align-self: auto;
+  }
+  .grid-self {
+    justify-self: auto;
+  }
+}
+
+@media (max-width: 63.8em) {
+  .technology-box {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 4.6rem;
+    gap: 1.8rem;
+  }
+}
+
+@media (max-width: 59.3em) {
+  .hero-box {
+    grid-template-columns: 1fr;
+  }
+  .hero-left-box {
+    margin-bottom: 8.5rem;
+  }
+  .service-box {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .passion-box {
+    grid-template-columns: 1fr;
+  }
+  .brand-store {
+    grid-column: 1 / -1;
+  }
+
+  .brand-explain {
+    grid-column: 1 / -1;
+  }
+
+  .technology-box {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .skills-box {
+    grid-template-columns: 1fr;
+  }
+  .line {
+    display: none;
+  }
+
+  .skill-helper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .skill-describer {
+    align-items: center;
+    justify-self: center;
+  }
+
+  .grid-self {
+    justify-self: end;
+  }
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .contact-locate {
+    margin-top: 6.8rem;
+    align-items: start;
+    justify-self: start;
+  }
+
+  .nav-hide {
+    display: none;
+  }
+
+  .day-night {
+    width: 15.4rem;
+    background: none;
+    justify-content: space-evenly;
+  }
+  .menu-point {
+    background: none;
+  }
+  .menu-on {
+    display: block;
+  }
+}
+
+@media (max-width: 48em) {
+  .technology-box {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 41.8em) {
+  html {
+    font-size: 43.75%;
+  }
+
+  .service-box {
+    grid-template-columns: 1fr;
+  }
+
+  .social-box {
+    display: none;
+  }
+}

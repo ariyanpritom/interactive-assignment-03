@@ -1,0 +1,226 @@
+/* 
+
+Skills, Services, Work experience, Contact, footer
+
+COLOR
+    color -> #fff
+    color -> #8f8f92
+    color -> #62a92b
+    color -> #f778ba
+    background-color-primary -> #1f1f24
+    background-color-secondary -> #272730
+    border-color -> #3b413d
+FONT
+    font-family: 'DM Mono', monospace;
+    
+*/
+
+/* ************************************************ */
+/* GENERAL COMPONENTS */
+/* ************************************************ */
+
+*,
+*:focus,
+*::before,
+*::after {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*  (10px / 16px) * 100 = 62.5% */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'DM Mono', monospace;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #1f1f24;
+  background-image: url(../img/bg-dark.png);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+/* ************************************************ */
+/* GENERAL REUSABLE COMPONENTS */
+/* ************************************************ */
+
+.container {
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/* GRID COMPONENT*/
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 4.4rem;
+}
+
+.grid-custom {
+  display: grid;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--6-cols {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+.grid-self {
+  justify-self: end;
+}
+
+/* HEADING COMPONENT */
+.heading-primary {
+  font-size: 5.7rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.2;
+  padding: 1.8rem 0;
+}
+
+/* SUBHEADING */
+.subheading {
+  display: inline-block;
+  font-style: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.75px;
+  background-image: linear-gradient(to right, #a5fb52, #699f34);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+.subheading::before {
+  content: '';
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #62a92b;
+  position: absolute;
+  border-radius: 50%;
+  top: 50%;
+  left: -10%;
+  transform: translate(-50%, -50%);
+}
+
+/* border */
+.border {
+  border: 1px solid #3b413d;
+  border-radius: 0.8rem;
+}
+
+/* list */
+.list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.list-item {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+/* LINK */
+.link,
+.link:link,
+.link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #8f8f92;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #62a92b;
+}
+
+/* HELPER CLASSES */
+
+.margin-top-big {
+  margin-top: 15.8rem !important;
+}
+
+.margin-top-md {
+  margin-top: 4.8rem !important;
+}
+
+.margin-top-sm {
+  margin-top: 2.8rem !important;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 2.8rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.margin-bottom-big {
+  margin-bottom: 6.8rem !important;
+}
+
+.center-text {
+  text-align: center !important;
+}
+
+.content-pd-sm {
+  padding: 3.8rem 0 !important;
+}
+
+.content-pd-md {
+  padding: 4.8rem 0 !important;
+}
+
+.context-pd-md {
+  padding: 0 3.2rem !important;
+}
